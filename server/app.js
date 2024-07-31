@@ -218,14 +218,37 @@ function noOfVow(str) {
 // (17)
 
 // Swap two integers present in variables num1 and num2 without using temporary variable
-let num1 = 10, num2 = 20;
+num2 = 10;
 
-[num1, num2] = [num2 , num1]
+// Swap using arithmetic operations
+num1 = num1 + num2; // num1 now holds the sum of both numbers
+num2 = num1 - num2; // num2 is now the original value of num1
+num1 = num1 - num2; // num1 is now the original value of num2
 
-// num1 = num1 + num2 ;
-// num2 = num1 - num2 ;
-// num1 = num1 - num2 ;
-console.log(num1,num2)
+// console.log("num1:", num1);
+//  Outputs: num1: 10
+// console.log("num2:", num2); 
+// Outputs: num2: 5
 
+// ************************************************************************************************************
+// (18)Write a function which returns true if given value of number is an integer without using any inbuilt functions
+
+
+
+function isInteger(value) {
+    // Check if the value is a number
+    if (typeof value !== 'number') {
+        return false;
+    }
+    
+    // Check if the number is finite
+    if (value !== value || value === Infinity || value === -Infinity) {
+        return false;
+    }
+
+    // Check if the number is an integer
+    // A number is an integer if its difference from Math.floor(value) is zero
+    return value - Math.floor(value) === 0;
+}
 
 
