@@ -248,10 +248,13 @@ num2 = 10;
 
 // console.log(Math.floor(Math.random() * 10) + 1);
 
+// function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
+//     return rangeStart + Math.round(Math.random() * (rangeEnd - rangeStart));
+//   }
+   
+//   console.log(randomNumberGeneratorInRange(10, 50)); 
+// ***********************************************************************************************************************
+// (20) Write a program to reverse a string
+// String can be reversed by iterating it and storing it in reverse order
+// String can also be reversed by converting it to array, then joining it after reversing
 
-
-function isInt(num){
-    return num%1 === 0
-}
-
-console.log(isInt(0.2));
