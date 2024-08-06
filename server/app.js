@@ -221,9 +221,9 @@ function noOfVow(str) {
 num2 = 10;
 
 // Swap using arithmetic operations
-num1 = num1 + num2; // num1 now holds the sum of both numbers
-num2 = num1 - num2; // num2 is now the original value of num1
-num1 = num1 - num2; // num1 is now the original value of num2
+// num1 = num1 + num2; 
+// num2 = num1 - num2; 
+// num1 = num1 - num2; 
 
 // console.log("num1:", num1);
 //  Outputs: num1: 10
@@ -235,20 +235,23 @@ num1 = num1 - num2; // num1 is now the original value of num2
 
 
 
-function isInteger(value) {
-    // Check if the value is a number
-    if (typeof value !== 'number') {
-        return false;
-    }
-    
-    // Check if the number is finite
-    if (value !== value || value === Infinity || value === -Infinity) {
-        return false;
-    }
+// Modulo operator can be used to check if there is a remainder left when divided by 1
+// function isInt(value) {
+//   return value % 1 === 0;
+// }
 
-    // Check if the number is an integer
-    // A number is an integer if its difference from Math.floor(value) is zero
-    return value - Math.floor(value) === 0;
+// console.log(isInt(4.1)) 
+// isInt(12.2); 
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// (19)Create a function which returns a random number in the given range of values both inclusive
+
+// console.log(Math.floor(Math.random() * 10) + 1);
+
+
+
+function isInt(num){
+    return num%1 === 0
 }
 
-
+console.log(isInt(0.2));
