@@ -294,5 +294,28 @@ num2 = 10;
 // console.log(reverseSringByWords("JavaScript is awesome"));
 
 
+// (22)6. Write a program to reverse a given integer number
+// The remainder of the number can be fetched and the number can be divided by 10 to remvoe the the digit in loop till number becomes 0
+// A simple approach to reverse a number could also be to convert it in to a string and  then reverse it.
 
+// (M1)
+// function revereTheInteger(int){
+//      return Number(int.toString().split("").reverse().join(""));
+// }
+// console.log(revereTheInteger(123456));
 
+// (M2)
+
+// ******
+
+let num = 3849;
+let reversedNum = 0;
+while (num !== 0) {
+  reversedNum = reversedNum * 10 + (num % 10);
+  console.log("reversedNum",reversedNum)
+  num = Math.floor(num / 10);
+  console.log("num",num)
+}
+ 
+reversedNum; 
+// 9483
