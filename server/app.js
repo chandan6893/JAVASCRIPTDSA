@@ -280,3 +280,8 @@ num2 = 10;
 // (21) Write a program to reverse a string by words. Also show the reverse of each words in place
 // The string can be reversed by words, by splitting the string with spaces and joining them back after reverse
 // If the the letters in each word have to be reversed, the string reversal procedure has to be followed after breaking the string with spaces
+
+function reverseSringByWords(str){
+ return str.split(" ").reverse().join(" ").split("").reverse().join("")
+}
+console.log(reverseSringByWords("Hello There"));
