@@ -258,3 +258,25 @@ num2 = 10;
 // String can be reversed by iterating it and storing it in reverse order
 // String can also be reversed by converting it to array, then joining it after reversing
 
+// M1
+// function reverseTheString(str){
+//     const newstr = str.split("").reverse().join("");
+//     return newstr;
+// }
+// console.log(reverseTheString("Hello Guys"))
+
+// M2
+// const str = "JavaScript is awesome";
+// let reversedString = "";
+// for (let i = 0; i < str.length; i++) {
+//   reversedString = str.charAt(i) + reversedString;
+//   console.log(reversedString);
+// }
+ 
+// console.log(reversedString); 
+// "emosewa si tpircSavaJ"
+
+// **********************************************************************************************************
+// (21) Write a program to reverse a string by words. Also show the reverse of each words in place
+// The string can be reversed by words, by splitting the string with spaces and joining them back after reverse
+// If the the letters in each word have to be reversed, the string reversal procedure has to be followed after breaking the string with spaces
