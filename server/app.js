@@ -281,7 +281,18 @@ num2 = 10;
 // The string can be reversed by words, by splitting the string with spaces and joining them back after reverse
 // If the the letters in each word have to be reversed, the string reversal procedure has to be followed after breaking the string with spaces
 
-function reverseSringByWords(str){
- return str.split(" ").reverse().join(" ").split("").reverse().join("")
-}
-console.log(reverseSringByWords("Hello There"));
+// function reverseSringByWords(str){
+    // (M1)
+//  return str.split(" ").reverse().join(" ")
+//  .split("").reverse().join("")
+
+ // (M2)
+    // return str.split(" ").map((word,i)=>{
+    //     return word.split("").reverse().join("")
+    // }).join(" ")
+// }
+// console.log(reverseSringByWords("JavaScript is awesome"));
+
+
+
+
