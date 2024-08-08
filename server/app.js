@@ -305,44 +305,14 @@ num2 = 10;
 // console.log(revereTheInteger(123456));
 
 // (M2)
-
-// ******
-
-// let num = 3849;
+// let num = 1234;
 // let reversedNum = 0;
-// while (num !== 0) {
-//   reversedNum = reversedNum * 10 + (num % 10);
-//   console.log("reversedNum",reversedNum)
-//   num = Math.floor(num / 10);
-//   console.log("num",num)
+
+// while ( num !== 0 ){
+//     reversedNum = reversedNum * 10 + num%10;
+//      num = Math.floor(num/10)
 // }
- 
-// reversedNum; 
-// 9483
+// console.log(reversedNum)
 
-// function  reversedNum(num){
-
-//     let revNo = 0;
-
-//     while(num !== 0){
-//         revNo = revNo + Math.floor(num/10);
-//     }
-//     return revNo;
-
-// }
-
-
-
-let revNo = 0;
-let num = 1234
-while(num !== 0){
-    revNo = revNo + Math.floor(num/10);
-}
-
-console.log(revNo)
-// console.log( reversedNum(1234))
-
-
-
-
+// ***************************************************************************************************************************
 
