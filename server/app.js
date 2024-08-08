@@ -308,14 +308,41 @@ num2 = 10;
 
 // ******
 
-let num = 3849;
-let reversedNum = 0;
-while (num !== 0) {
-  reversedNum = reversedNum * 10 + (num % 10);
-  console.log("reversedNum",reversedNum)
-  num = Math.floor(num / 10);
-  console.log("num",num)
-}
+// let num = 3849;
+// let reversedNum = 0;
+// while (num !== 0) {
+//   reversedNum = reversedNum * 10 + (num % 10);
+//   console.log("reversedNum",reversedNum)
+//   num = Math.floor(num / 10);
+//   console.log("num",num)
+// }
  
-reversedNum; 
+// reversedNum; 
 // 9483
+
+// function  reversedNum(num){
+
+//     let revNo = 0;
+
+//     while(num !== 0){
+//         revNo = revNo + Math.floor(num/10);
+//     }
+//     return revNo;
+
+// }
+
+
+
+let revNo = 0;
+let num = 1234
+while(num !== 0){
+    revNo = revNo + Math.floor(num/10);
+}
+
+console.log(revNo)
+// console.log( reversedNum(1234))
+
+
+
+
+
